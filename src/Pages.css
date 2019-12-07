@@ -1,0 +1,58 @@
+.HomePage {
+  display: flex;
+  justify-content: center;
+  font-size: 2.8rem;
+  line-height: 1.2992;
+
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+.HomePage > div {
+  margin: 2rem 0;
+}
+
+.HomePage a {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to right,currentColor 100%,currentColor 0);
+  background-size: 1px 1px;
+  background-position: 0 100%;
+  white-space: initial; 
+}
+
+
+@media screen and (min-width: 768px) {
+.MusicPage, .TechPage {
+  width: 50%;
+}
+
+.TechPage {
+  margin-left: 50%;
+}
+}
+
+
+.HomePageBackground, .MusicPageBackground, .TechPageBackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events:none;
+}
+
+.HomePageBackground {
+  background-image: url("/images/piano.jpg");
+}
+
+.MusicPageBackground {
+  background-image: url("/images/lighthouse.jpg");
+}
+
+.TechPageBackground {
+  background-image: url("/images/seattle.jpg");
+}

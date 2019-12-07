@@ -1,0 +1,102 @@
+.HeaderNav {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 767px) {
+.HeaderNav {
+  padding: 6vw;
+} 
+}
+
+.HeaderNavContents {
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.HeaderTitle {
+  display: flex;
+  order: 1;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.HeaderTitleText {
+  /*font-family: acumin-pro;*/
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+.HeaderTitleText {
+  font-size: 1.2rem;
+}
+} /* @media */
+
+.HeaderTitleText a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.HeaderTitleText a:visited {
+  color: #ffffff;
+}
+
+.HeaderActions {
+  flex-grow: 0;
+  flex-shrink: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  order: 3;
+  margin-right: 0;
+}
+
+.HeaderActions a {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  line-height: 1;
+  margin-left: 20px
+}
+
+a.GitHubAction {
+  background-image: url('/images/github.svg');
+  background-position: -6px -8px;
+  background-size: 35px 35px;
+}
+
+a.LinkedInAction {
+  background-image: url('/images/linkedin.svg');
+  background-position: -6px -8px;
+  background-size: 35px 35px;
+}
+
+a.PinterestAction {
+  background-image: url('/images/pinterest.svg');
+  background-position: -6px -8px;
+  background-size: 35px 35px;
+}
+
+a.EmailAction {
+  background-image: url('/images/email.svg');
+  background-position: -3px -7px;
+  background-size: 35px 35px;
+  width: 22px;
+}
