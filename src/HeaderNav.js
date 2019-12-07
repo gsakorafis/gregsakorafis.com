@@ -13,7 +13,7 @@ function HeaderNav() {
         <div className="HeaderActions">
           <a className="GitHubAction" href="https://github.com/gsakorafis"></a>
           <a className="EmailAction" href="mailto:greg@gregsakorafis.com"></a>
-          <a className="LinkedInAction" href="https://www.linkedin.com/gregsakorafis"></a>
+          <a className="LinkedInAction" href="https://www.linkedin.com/in/gregsakorafis/"></a>
           <a className="PinterestAction" href="https://pinterest.com/gregsakorafis"></a>
         </div>
       </div>
