@@ -11,10 +11,10 @@ function HeaderNav() {
           </div>
         </div>
         <div className="HeaderActions">
-          <a className="GitHubAction" href="https://github.com/gsakorafis"></a>
-          <a className="EmailAction" href="mailto:greg@gregsakorafis.com"></a>
-          <a className="LinkedInAction" href="https://www.linkedin.com/in/gregsakorafis/"></a>
-          <a className="PinterestAction" href="https://pinterest.com/gregsakorafis"></a>
+          <a className="GitHubAction" href="https://github.com/gsakorafis" aria-label="github"></a>
+          <a className="EmailAction" href="mailto:greg@gregsakorafis.com" aria-label="email"></a>
+          <a className="LinkedInAction" href="https://www.linkedin.com/in/gregsakorafis/" aria-label="linkedin"></a>
+          <a className="PinterestAction" href="https://pinterest.com/gregsakorafis" aria-label="pinterest"></a>
         </div>
       </div>
     </div>
