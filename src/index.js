@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { HomePage, MusicPage, TechPage } from './Pages';
+import PageAnalytics from './Analytics';
 import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom';
@@ -20,7 +21,9 @@ function RootNavigation() {
             <AppRouter />
           </Route>
           <Route path="*">
-            <div>I'm afraid I can't allow that, Dave</div>
+            <PageAnalytics>
+              <div>I'm afraid I can't allow that, Dave</div>
+            </PageAnalytics>
           </Route>
         </Switch>
       </div>
@@ -31,7 +34,7 @@ function RootNavigation() {
 function AppRouter() {
   return (
     <HashRouter>
-      <div>
+      <PageAnalytics>
         <Switch>
           <Route path="/music">
             <MusicPage />
@@ -43,7 +46,7 @@ function AppRouter() {
             <HomePage />
           </Route>
         </Switch>
-      </div>
+      </PageAnalytics>
     </HashRouter>
   );
 }
